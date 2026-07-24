@@ -1,0 +1,33 @@
+{
+  "name": "inventoryhub-api",
+  "version": "1.2.0",
+  "description": "Lightweight REST API for tracking inventory across warehouses, backed by SQLite.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --coverage",
+    "migrate": "node src/db/migrate.js",
+    "lint": "eslint src"
+  },
+  "keywords": ["inventory", "api", "sqlite", "express"],
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
