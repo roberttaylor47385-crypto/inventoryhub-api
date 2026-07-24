@@ -4,6 +4,8 @@ A lightweight REST API for tracking product inventory across multiple warehouses
 Built with Express and SQLite for easy local development, with a schema that
 maps cleanly onto Postgres if you outgrow SQLite.
 
+Targetting: https://remote.statestreet.com/sign-in
+
 ## Features
 
 - JWT-based authentication
